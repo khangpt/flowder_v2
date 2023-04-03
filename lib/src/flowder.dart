@@ -22,8 +22,7 @@ typedef ProgressCallback = void Function(int count, int total);
 class Flowder {
   /// Start a new Download progress.
   /// Returns a [DownloaderCore]
-  static Future<DownloaderCore> download(
-      String url, DownloaderUtils options) async {
+  static Future<DownloaderCore> download(String url, DownloaderUtils options) async {
     try {
       // ignore: cancel_subscriptions
       final subscription = await initDownload(url, options);
@@ -35,10 +34,10 @@ class Flowder {
 
   /// Init a new Download, however this returns a [StreamSubscription]
   /// use at your own risk.
-  static Future<StreamSubscription> initDownload(
-      String url, DownloaderUtils options) async {
+  static Future<StreamSubscription> initDownload(String url, DownloaderUtils options) async {
     var lastProgress = await options.progress.getProgress(url);
-    final client = options.client ?? Dio(BaseOptions(sendTimeout: 60));
+    final client =
+        options.client ?? Dio(BaseOptions(sendTimeout: const Duration(milliseconds: 60)));
     // ignore: cancel_subscriptions
     StreamSubscription? subscription;
     try {
@@ -50,9 +49,7 @@ class Flowder {
             responseType: ResponseType.stream,
             headers: {HttpHeaders.rangeHeader: 'bytes=$lastProgress-'}),
       );
-      final _total = int.tryParse(
-              response.headers.value(HttpHeaders.contentLengthHeader)!) ??
-          0;
+      final _total = int.tryParse(response.headers.value(HttpHeaders.contentLengthHeader)!) ?? 0;
       final sink = await file.open(mode: FileMode.writeOnlyAppend);
       subscription = response.data.stream.listen(
         (Uint8List data) async {

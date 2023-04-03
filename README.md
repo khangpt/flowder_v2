@@ -12,7 +12,7 @@ Handle your file downloads status in a more simple and easy way :heartbeat:
 
 dependencies:
 
-flowder: ^0.2.0
+flowder: ^1.0.0
 
 ```
 

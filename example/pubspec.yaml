@@ -1,6 +1,6 @@
 name: flowder_example
 description: Demonstrates how to use the flowder plugin.
-
+version: 1.0.0+1
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  path_provider: ^2.0.1
+  path_provider: 2.0.14
 
   flowder:
     # When depending on this package from a real application you should use:
