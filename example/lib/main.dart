@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flowder/flowder.dart';
+import 'package:flowder_v2/flowder.dart';
 import 'package:path_provider/path_provider.dart';
 
 void main() {
@@ -60,8 +60,7 @@ class _MyAppState extends State<MyApp> {
                   deleteOnCancel: true,
                 );
                 core = await Flowder.download(
-                    'http://ipv4.download.thinkbroadband.com/200MB.zip',
-                    options);
+                    'http://ipv4.download.thinkbroadband.com/200MB.zip', options);
               },
               child: Text('DOWNLOAD'),
             ),

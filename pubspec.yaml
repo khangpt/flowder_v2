@@ -1,4 +1,4 @@
-name: flowder
+name: flowder_v2
 description: Persistent file downloader manager, start, pause, resume, cancel your download.
 version: 1.0.0
 homepage: https://github.com/khangpt/flowder_v2

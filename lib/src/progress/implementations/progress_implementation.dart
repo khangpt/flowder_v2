@@ -1,4 +1,4 @@
-import 'package:flowder/src/progress/interfaces/progress_interface.dart';
+import 'package:flowder_v2/src/progress/interfaces/progress_interface.dart';
 
 /// Class used to notify to the presentation layer the status of the download.
 class ProgressImplementation extends ProgressInterface {

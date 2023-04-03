@@ -3,9 +3,9 @@ import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
-import 'package:flowder/src/core/downloader_core.dart';
-import 'package:flowder/src/utils/constants.dart';
-import 'package:flowder/src/utils/downloader_utils.dart';
+import 'package:flowder_v2/src/core/downloader_core.dart';
+import 'package:flowder_v2/src/utils/constants.dart';
+import 'package:flowder_v2/src/utils/downloader_utils.dart';
 
 export 'core/downloader_core.dart';
 export 'progress/progress.dart';
