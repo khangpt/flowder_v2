@@ -1,4 +1,4 @@
-# Flowder
+# Flowder V2
 
 Handle your file downloads status in a more simple and easy way :heartbeat:
 
@@ -12,7 +12,7 @@ Handle your file downloads status in a more simple and easy way :heartbeat:
 
 dependencies:
 
-flowder: ^1.0.0
+flowder_v2: ^1.0.1
 
 ```
 
