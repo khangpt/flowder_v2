@@ -1,6 +1,6 @@
 name: flowder_v2
 description: Persistent file downloader manager, start, pause, resume, cancel your download.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/khangpt/flowder_v2
 
 environment:
@@ -8,12 +8,13 @@ environment:
   flutter: ">=1.20.0"
 
 dependencies:
+  dio: 5.1.1
   flutter:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  dio: 5.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  very_good_analysis: ^4.0.0+1
